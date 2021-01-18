@@ -1,0 +1,37 @@
+<view class='container'>
+  <form>
+    <view class='top'>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>旧密码：</view>
+          <view>
+            <input placeholder="请输入旧密码" input maxlength='20' bindinput="bingOldPsd" value="{{oldPsd}}"></input>
+          </view>
+        </view>
+        <view class='x' bindtap="clearn" data-type = "old">✖</view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>新密码：</view>
+          <view>
+            <input placeholder="请输入新密码" maxlength='20' bindinput="bindNewPos" value="{{newPsd}}"></input>
+          </view>
+        </view>
+        <view class='x' bindtap="clearn" data-type = "new">✖</view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>确认密码：</view>
+          <view>
+            <input placeholder="请再次输入新密码" maxlength='20' bindinput="bingConfirmPsd" value="{{confirmPsd}}"></input>
+          </view>
+        </view>
+        <view class='x' bindtap="clearn" data-type = "confirm">✖</view>
+      </view>
+    </view>
+    <view class='btn' bindtap="updatePsd">确定</view>
+  </form>
+</view>
+

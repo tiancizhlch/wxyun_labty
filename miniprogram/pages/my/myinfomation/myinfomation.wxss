@@ -1,0 +1,20 @@
+/* pages/my/myinfomation/myinfomation.wxss */page{
+  background-color:#F5F5F5;
+}
+.all{
+  width:700rpx;
+  height:50rpx;
+  border-style:6px solid #F5F5F5;
+}
+.color{
+  background-color: white;
+}
+.float{ 
+  float:left;
+}
+.text{
+  margin-top:5rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  padding-left: 50rpx;
+}

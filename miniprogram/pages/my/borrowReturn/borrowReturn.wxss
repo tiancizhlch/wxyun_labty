@@ -1,0 +1,33 @@
+ /* page设置当前窗口背景色 */
+page{
+  background-color: #F5F5F5
+}
+
+ /* 定义.container设置容器样式 */
+.container{
+  padding: 5px 5px;
+  align-content: center;
+}
+
+ /* 定义.text-content设置文本样式 */
+.text-content{
+  padding: 5px;
+  /* align-content: center; */
+  height: 140rpx;
+  border-bottom: 10rpx solid #F5F5F5;
+  background-color: #FFFFFF;
+
+}
+.instrName{
+  font-size: 31rpx;
+  /* font-family: "楷体"; 
+  font-weight: bold; */
+  padding-top: 5rpx;
+}
+ .bottom{
+  display: flex;
+  font-size: 29rpx;
+  color: 	#808080;
+  margin-top: 40rpx;
+  justify-content: space-between;
+}

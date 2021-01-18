@@ -1,0 +1,34 @@
+<header>ceshi</header>
+<swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay circular previous-margin="13" next-margin="13">
+  <swiper-item class="bannerItem">
+    <image src="/images/lunbo1.jpg"></image>
+  </swiper-item>
+  <swiper-item class="bannerItem">
+    <image src="/images/lunbo2.jpg"></image>
+  </swiper-item>
+  <swiper-item class="bannerItem">
+    <image src="/images/lunbo3.jpg"></image>
+  </swiper-item>
+</swiper>
+<view class="main">
+  <navigator class="box" url="">
+    <image class="pic" src="/images/main1.png"></image>
+    <view class="txt">仪器查询</view>
+  </navigator>
+  <navigator class="box" url="">
+    <image class="pic" src="/images/main2.png"></image>
+    <view class="txt">仪器扫码</view>
+  </navigator>
+  <navigator class="box" url="">
+    <image class="pic" src="/images/main3.png"></image>
+    <view class="txt">系统配置</view>
+  </navigator>
+  <navigator class="box" url="">
+    <image class="pic" src="/images/main4.png"></image>
+    <view class="txt">数据统计</view>
+  </navigator>
+  <navigator class="box" url="../courseTable/courseTable">
+    <image class="pic" src="/images/main5.png"></image>
+    <view class="txt">课表管理</view>
+  </navigator>
+</view>

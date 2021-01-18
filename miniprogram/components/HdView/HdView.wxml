@@ -1,0 +1,14 @@
+<view class="header">
+    <view class="container hdCon">
+      <navigator class="logo">
+          <image mode="heightFix" class="logo-img" src="../../images/header.png"/>
+          <text class="titile">实验室管理</text>
+      </navigator>
+      
+      <view class="kefu">
+        <button class="btn" open-type="contact"></button>
+        <image mode="heightFix" class="kefu-img" src="../../images/kefu.png"/>
+      </view>   
+         
+    </view>
+</view>

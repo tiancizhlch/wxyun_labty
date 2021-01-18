@@ -1,0 +1,35 @@
+<view class='b1 float color'>
+    <view class='head float'>
+       <image style="width: 250rpx;height: 250rpx" src="/images/teacher.png"></image>
+    </view>
+    <view class="info">
+      <text class='userName'>{{user.userName}}</text>
+      <text class='depName'>{{user.depName}}</text>
+    </view>
+</view>
+
+<view class='b2 float color text' bindtap="openPage" data-url="/pages/my/myinfomation/myinfomation">
+   <image src="/images/myinfomation.png" class="image"></image>
+   <text>个人资料</text>
+   <image src="/images/mygo.png" class="image2"></image>
+</view>
+
+<view class='b2 float color text'  bindtap="openPage" data-url="/pages/my/borrowReturn/borrowReturn">
+  <image src="/images/myrecard.png" class="image"></image>
+  <text>借用归还记录</text>
+  <image src="/images/mygo.png" class="image2"></image>
+</view>
+<view class='b2 float color text' style="position: relative; ">
+   <button class="contacButton" style="border: solid 1px;color: red"  open-type="contact"></button>
+      <image src="/images/mykefu.png" class="image"></image>
+      <text>联系客服</text>
+</view>
+<view class='b2 float color text' bindtap="openPage" data-url="/pages/my/updatePsd/updatePsd">
+   <image src="/images/updatePsd.png" class="image"></image>
+   <text>修改密码</text>
+   <image src="/images/mygo.png" class="image2"></image>
+</view>
+<view class='b2 float color text' bindtap="logout" data-url="/pages/login/login">
+   <image src="/images/myquit.png" class="image"></image>
+   <text>退出</text>
+</view>

@@ -1,0 +1,5 @@
+.bannerItem{padding:0 5px;box-sizing: border-box;margin: 0 auto;transform: scale(0.9);border-radius: 10rpx;}
+.main{margin-top: 10rpx;}
+.main .box{text-align: center; width: 180rpx;display: inline-block;}
+.main .pic{width: 100rpx; height: 100rpx;margin-top: 40rpx;}
+.main .txt{font-size: 26rpx;margin-top: 5rpx;font-family: "楷体_gb2312"; font-weight: bold;}

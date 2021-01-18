@@ -1,0 +1,28 @@
+<!--pages/myinfomation/myinfomation.wxml-->
+<view class="all float color text">
+  <text class="text">仪器编号：{{queryDataObject.instrCode}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">仪器名称：{{queryDataObject.instrName}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">借用日期：{{queryDataObject.borrowDate}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">借用人：{{queryDataObject.borrowerName}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">借出人：{{queryDataObject.lenderName}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">归还日期：{{queryDataObject.returnDate}}</text>
+</view>
+<view wx:if="{{professionalName!=''}}" class="all float color text">
+  <text class="text">归还人：{{queryDataObject.returnPeopleName}}</text>
+</view>
+<view wx:if="{{grade!=''}}" class="all float color text">
+  <text class="text">接收人：{{queryDataObject.receivedName}}</text>
+</view>
+<view wx:if="{{className!=''}}" class="all float color text">
+  <text class="text">状态：{{queryDataObject.borrowStatusName}}</text>
+</view>

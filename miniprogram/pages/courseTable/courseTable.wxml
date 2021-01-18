@@ -1,0 +1,46 @@
+<view class="section">
+  <picker bindchange="bindTermPickerChange" value="{{termArray[termIndex].id}}" range="{{termArray}}" range-key="creater">
+    <view class="term">
+      选择学期：<input class="text" placeholder = "请选择学期" value="{{termArray[termIndex].creater}}"></input>
+    </view>
+
+  </picker>
+  <picker bindchange="bindWeekPickerChange" value="{{weeksArray[weeksIndex].id}}" range="{{weeksArray}}" range-key="creater">
+    <view class="term">
+      选择教学周：<input class="text" placeholder = "请选择教学周" value="{{weeksArray[weeksIndex].creater}}"></input>
+    </view>
+
+  </picker>
+</view>
+
+
+<!-- <view class="section {{reply?'on':'off'}}">
+    <input name="other" placeholder="请输入所预约项目" type="text"/>
+  </view> -->
+
+<view class="top">
+  <view class="monthSize">{{monthNow}}\n月</view>
+  <view wx:for="{{weeksDateList}}"  class="top-text">{{item.weekDay}}\n{{item.day}}</view>
+</view>
+<scroll-view scroll-y="true" class="scroll">
+  <view style="height:1450rpx;width:730rpx;display:flex;">
+    <view style="background-color:#D2E6B3;color:#7cba23;">
+      <view wx:for="{{schoolTime}}" class="left">
+        {{item.pitchNum}}
+      </view>
+    </view>
+    <view wx:for="{{schoolTime}}">
+      <view
+        style="width:750rpx;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+      </view>
+    </view>
+
+    <!--课表-->
+    <view wx:for="{{contentList}}">
+      <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}"
+        style="margin-left:{{(item.weekly-1)*100}}rpx;margin-top:{{(item.startTime-1)*100+5}}rpx;height:{{item.pitchNum*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
+        <view class="smalltext">{{item.className}}-{{item.courseName}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

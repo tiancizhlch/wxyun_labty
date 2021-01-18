@@ -1,0 +1,26 @@
+<!--pages/myinfomation/myinfomation.wxml-->
+<view class="all float color text">
+  <text class="text">姓名：{{name}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">性别：{{genderName}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">职工号/学号：{{num}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">手机号：{{phone}}</text>
+</view>
+<view class="all float color text">
+  <text class="text">院系：{{depName}}</text>
+</view>
+<view wx:if="{{professionalName!=''}}" class="all float color text">
+  <text class="text">专业：{{professionalName}}</text>
+</view>
+<view wx:if="{{grade!=''}}" class="all float color text">
+  <text class="text">年级：{{grade}}</text>
+</view>
+<view wx:if="{{className!=''}}" class="all float color text">
+  <text class="text">班级：{{className}}</text>
+</view>
+

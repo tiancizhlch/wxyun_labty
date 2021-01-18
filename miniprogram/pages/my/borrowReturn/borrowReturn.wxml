@@ -1,0 +1,11 @@
+<view class='container'>
+  <block wx:for="{{borrowReturnList}}" wx:key="index">
+    <view class='text-content' bindtap="openDetail" data-index="{{index}}">
+      <view class="instrName">仪器名称：{{item.instrName}}</view>
+      <view class="bottom">
+        <view class="left">借用日期：{{item.borrowDate}}</view>
+        <view class="right">借用状态：{{item.borrowStatusName}}</view>
+      </view>
+    </view>
+  </block>
+</view>
