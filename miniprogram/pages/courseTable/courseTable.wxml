@@ -1,13 +1,13 @@
 <view class="section">
   <picker bindchange="bindTermPickerChange" value="{{termArray[termIndex].id}}" range="{{termArray}}" range-key="creater">
     <view class="term">
-      选择学期：<input class="text" placeholder = "请选择学期" value="{{termArray[termIndex].creater}}"></input>
+      选择学期：<input class="text" disabled='disabled' placeholder = "请选择学期" value="{{termArray[termIndex].creater}}"></input>
     </view>
 
   </picker>
   <picker bindchange="bindWeekPickerChange" value="{{weeksArray[weeksIndex].id}}" range="{{weeksArray}}" range-key="creater">
     <view class="term">
-      选择教学周：<input class="text" placeholder = "请选择教学周" value="{{weeksArray[weeksIndex].creater}}"></input>
+      选择教学周：<input class="text" disabled='disabled' placeholder = "请选择教学周" value="{{weeksArray[weeksIndex].creater}}"></input>
     </view>
 
   </picker>

@@ -34,6 +34,8 @@ Page({
         this.setData({
           configList: res.data
          })
+         console.log(res.data);
+         app.globalData.url = res.data[0].schoolUrl;
       }
     })
     //  wx.request({
@@ -117,7 +119,6 @@ Page({
         icon: 'none',
         duration: 2000
       })
-      
     }
     if(this.data.userName.length == 0 || this.data.password.length == 0){
       wx.showToast({

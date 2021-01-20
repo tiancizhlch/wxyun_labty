@@ -55,6 +55,16 @@ page{
   color: #cccccc; 
   font-size: 14px
  } 
+
+ .text { 
+  flex: block; 
+  float: right; 
+  text-align: right; 
+  margin-right: 22px; 
+  margin-top: 0px;
+  color: #cccccc; 
+  font-size: 14px
+ } 
  .line { 
   margin-top: 8px; 
  } 

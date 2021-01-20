@@ -23,7 +23,7 @@
       <picker bindchange="bindUrlPickerChange" value="{{configList[urlIndex].schoolUrl}}" range="{{configList}}" range-key="schoollName">
       <image class="schImage" src="../../images/school.png"></image>
       <label class="loginLab">学校</label>
-      <input class="inputText"  placeholder="请选择学校" value="{{configList[urlIndex].schoollName}}" />
+      <input class="inputText" disabled='disabled' placeholder="请选择学校" value="{{configList[urlIndex].schoollName}}" />
     </picker>
     </view>
     <!--按钮-->
